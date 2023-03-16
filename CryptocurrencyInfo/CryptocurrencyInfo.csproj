@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dark_mode.png" />
+    <None Remove="Gear-icon.png" />
+    <None Remove="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.ico" />
+    <None Remove="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.png" />
+    <None Remove="png-transparent-computer-icons-calculator-calculator-electronics-text-rectangle-thumbnail.png" />
+    <None Remove="png-transparent-magnifying-glass-computer-icons-magnifying-glass-glass-art-symbol.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FancyCandles" Version="2.7.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="dark_mode.png" />
+    <Resource Include="Gear-icon.png" />
+    <Resource Include="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.ico" />
+    <Resource Include="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.png" />
+    <Resource Include="png-transparent-computer-icons-calculator-calculator-electronics-text-rectangle-thumbnail.png" />
+    <Resource Include="png-transparent-magnifying-glass-computer-icons-magnifying-glass-glass-art-symbol.png" />
+  </ItemGroup>
+
+</Project>

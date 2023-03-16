@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "msjN16Dx/Rx6OnZkQ8PmfuEOzQ7UNJHVWo4JzMjmVz+xVulxuf9OcEJocBQ1nHmsaMpYX84If8GEsx21TbbIQQ==",
+  "success": true,
+  "projectFilePath": "C:\\projects\\CryptocurrencyInfo\\CryptocurrencyInfo\\CryptocurrencyInfo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stanislav\\.nuget\\packages\\fancycandles\\2.7.1\\fancycandles.2.7.1.nupkg.sha512",
+    "C:\\Users\\Stanislav\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Stanislav\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"FancyCandles 2.7.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "FancyCandles",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Windows.Interactivity.WPF 2.0.20525\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "System.Windows.Interactivity.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

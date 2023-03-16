@@ -1,0 +1,58 @@
+﻿<Window x:Class="CryptocurrencyInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptocurrencyInfo" 
+        mc:Ignorable="d"
+        Title="CryptocurrencyInfo" Height="625" Width="1200" WindowStyle="ThreeDBorderWindow" FontWeight="Normal" Icon="/moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.ico">
+   
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel  Grid.Column="0" Orientation="Vertical" Margin="2">
+
+            <Button x:Name="main_page" Click = "Button_Click_1"  Margin="1" Width="65" Height="65">
+                <Button.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="/moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="data_page" Click = "Button_Click_2" Margin="1" Width="65" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="/png-transparent-magnifying-glass-computer-icons-magnifying-glass-glass-art-symbol.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="calc_page" Click = "Button_Click_3"  Margin="1" Width="65" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="/png-transparent-computer-icons-calculator-calculator-electronics-text-rectangle-thumbnail.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="empty1" Margin="1" Height="65" Width="65"/>
+            <Button x:Name="empty2" Margin="1" Height="65" Width="65"/>
+            <Button x:Name="empty3" Margin="1" Height="65" Width="65"/>
+
+            <Button x:Name="eng_ukr" Click = "Button_Click_4" Content="eng/ukr" FontSize="12" FontWeight="Bold" Margin="1" Width="65" Height="65"/>
+            <Button x:Name="dark_theme" Click = "Button_Click_5" Margin="1" Width="65" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="/dark_mode.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="sett" Click = "Button_Click_6"  Margin="1" Width="65" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Gear-icon.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Frame x:Name="myFrame" Grid.Column="1"/>
+
+    </Grid>
+</Window>
