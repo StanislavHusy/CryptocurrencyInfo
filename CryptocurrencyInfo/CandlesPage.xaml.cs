@@ -106,10 +106,15 @@ namespace CryptocurrencyInfo
                     Random rnd = new Random();
                     double d_v1 = rnd.NextDouble();
                     double high_price = p0 * (1 + 0.005 * d_v1);
-                    // generate low price 
-                    rnd = new Random();
+
+                    if (i > 0 && high_price < candles[i - 1].L)
+                        high_price = candles[i - 1].L;
+                        // generate low price 
+                        rnd = new Random();
                     d_v1 = rnd.NextDouble();
                     double low_price = p0 * (0.99 + 0.005 * d_v1);
+                    if (i > 0 && low_price > candles[i - 1].H)
+                        low_price = candles[i - 1].H;
                     // generate open price 
                     rnd = new Random();
                     d_v1 = rnd.NextDouble();
