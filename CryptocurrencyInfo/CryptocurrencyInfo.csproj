@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="43296.png" />
+    <None Remove="cryptocurrencies.jpeg" />
     <None Remove="dark_mode.png" />
     <None Remove="Gear-icon.png" />
     <None Remove="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.ico" />
@@ -22,6 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="43296.png" />
+    <Resource Include="cryptocurrencies.jpeg" />
     <Resource Include="dark_mode.png" />
     <Resource Include="Gear-icon.png" />
     <Resource Include="moiny_CryptocurrencyInfo_label_be0fdef0-d767-4166-9a3a-ff6cea1f09e8-removebg-preview.ico" />

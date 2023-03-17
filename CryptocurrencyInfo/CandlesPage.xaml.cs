@@ -30,9 +30,17 @@ namespace CryptocurrencyInfo
         CandlesSource candles = new CandlesSource(FancyCandles.TimeFrame.M5);
         HttpClient client_copy; // грубая ошибка???
         private BindingList<Symbol_info_convert> data_assets = new BindingList<Symbol_info_convert>();
-        public CandlesPage(HttpClient client)
+        public CandlesPage(HttpClient client, bool eng_localization)
         {
             InitializeComponent();
+            if (!eng_localization)
+            {
+                transl_1.Text = "ціна";
+                transl_2.Text = "капіталізація млрд";
+                transl_3.Text = "добові обсяги млрд";
+                textBox1.Text = "id активу";
+            }
+
             client_copy = client;
         }
 

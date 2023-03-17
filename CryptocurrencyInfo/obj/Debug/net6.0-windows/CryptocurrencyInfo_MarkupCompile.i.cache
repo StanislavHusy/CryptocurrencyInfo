@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\projects\CryptocurrencyInfo\CryptocurrencyInfo\obj\Debug\net6.0-windows\
+C:\Doc\GitHub\CryptocurrencyInfo\CryptocurrencyInfo\obj\Debug\net6.0-windows\
 CryptocurrencyInfo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\projects\CryptocurrencyInfo\CryptocurrencyInfo\App.xaml
-3-1689121159
+C:\Doc\GitHub\CryptocurrencyInfo\CryptocurrencyInfo\App.xaml
+41694855861
 
-8-582575170
+9-295448138
 1991009600657
-CandlesPage.xaml;MainPage.xaml;MainWindow.xaml;
+CandlesPage.xaml;ConverterPage.xaml;MainPage.xaml;MainWindow.xaml;
 
-False
+True
 

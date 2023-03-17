@@ -28,8 +28,9 @@ namespace CryptocurrencyInfo
     /// </summary>
     public partial class MainWindow : Window
     {
-       static readonly HttpClient client = new HttpClient();
+        static readonly HttpClient client = new HttpClient();
         private BindingList<Symbol_info_convert> data_assets = new BindingList<Symbol_info_convert>();
+        bool eng_localization = true;
         public MainWindow()
         {
             InitializeComponent();
@@ -42,8 +43,6 @@ namespace CryptocurrencyInfo
                 HttpResponseMessage response = await client.GetAsync("http://api.coincap.io/v2/assets");
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
-                // Above three lines can be replaced with new helper method below
-                // string responseBody = await client.GetStringAsync(uri);
 
                 M_Symbol_info_from_api k = JsonConvert.DeserializeObject<M_Symbol_info_from_api>(responseBody);
                 //System.Diagnostics.Debug.WriteLine(responseBody);
@@ -54,8 +53,8 @@ namespace CryptocurrencyInfo
                 nfi.NumberDecimalSeparator = ".";
                 for (int i = 0; i < 100;i++)
                 {
-                    Symbol_info_convert v = new Symbol_info_convert(k.data[i].name, k.data[i].id, Decimal.Round(Convert.ToDecimal(k.data[i].priceUsd, nfi), 2),
-                    Decimal.Round(Convert.ToDecimal(k.data[i].marketCapUsd, nfi), 0), Decimal.Round(Convert.ToDecimal(k.data[i].volumeUsd24Hr, nfi), 0),
+                    Symbol_info_convert v = new Symbol_info_convert(k.data[i].name, k.data[i].id, Decimal.Round(Convert.ToDecimal(k.data[i].priceUsd, nfi), 4),
+                    Decimal.Round(Convert.ToDecimal(k.data[i].marketCapUsd, nfi) / 1000000000, 4), Decimal.Round(Convert.ToDecimal(k.data[i].volumeUsd24Hr, nfi) / 1000000000, 4),
                     Decimal.Round(Convert.ToDecimal(k.data[i].changePercent24Hr, nfi), 2));
                     data_assets.Add(v);
                 }
@@ -64,20 +63,20 @@ namespace CryptocurrencyInfo
             {
 
             }
-            myFrame.Content = new MainPage(data_assets);
+            myFrame.Content = new MainPage(data_assets, eng_localization);
         }
         private async void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            myFrame.Content = new CandlesPage(client);
+            myFrame.Content = new CandlesPage(client, eng_localization);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            myFrame.Content = new ConverterPage(data_assets, eng_localization);
         }
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            eng_localization = !eng_localization;
         }
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {

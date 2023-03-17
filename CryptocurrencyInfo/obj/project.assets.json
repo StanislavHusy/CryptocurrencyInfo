@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\CryptocurrencyInfo\\CryptocurrencyInfo\\CryptocurrencyInfo.csproj",
+      "projectUniqueName": "C:\\Doc\\GitHub\\CryptocurrencyInfo\\CryptocurrencyInfo\\CryptocurrencyInfo.csproj",
       "projectName": "CryptocurrencyInfo",
-      "projectPath": "C:\\projects\\CryptocurrencyInfo\\CryptocurrencyInfo\\CryptocurrencyInfo.csproj",
+      "projectPath": "C:\\Doc\\GitHub\\CryptocurrencyInfo\\CryptocurrencyInfo\\CryptocurrencyInfo.csproj",
       "packagesPath": "C:\\Users\\Stanislav\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\CryptocurrencyInfo\\CryptocurrencyInfo\\obj\\",
+      "outputPath": "C:\\Doc\\GitHub\\CryptocurrencyInfo\\CryptocurrencyInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

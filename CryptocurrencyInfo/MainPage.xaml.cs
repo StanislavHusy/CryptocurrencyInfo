@@ -23,9 +23,18 @@ namespace CryptocurrencyInfo
     public partial class MainPage : Page
     {
         BindingList<Symbol_info_convert> data_assets_copy = new BindingList<Symbol_info_convert>();
-        public MainPage(BindingList<Symbol_info_convert> data_assets)
+        public MainPage(BindingList<Symbol_info_convert> data_assets, bool eng_localization)
         {
             InitializeComponent();
+            if (!eng_localization)
+            {
+                transl_1.Text = "Інформація про активи";
+                transl_2.Header = "назва";
+                transl_3.Header = "ціна";
+                transl_4.Header = "капіталізація млрд дол";
+                transl_5.Header = "добові обсяги в млрд дол";
+                transl_6.Header = "відсоток зміни 24год";
+            }
             data_assets_copy = data_assets;
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)

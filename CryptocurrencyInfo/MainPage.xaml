@@ -14,7 +14,7 @@
             <RowDefinition Height="70" />
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock  Grid.Row="0" Text="Asset information" FontSize="22" Margin="60,35,0,0"/>
+        <TextBlock x:Name="transl_1"  Grid.Row="0" Text="Asset information" FontSize="22" Margin="60,35,0,0"/>
         
 
         <Grid  Grid.Row="1">
@@ -22,7 +22,7 @@
             <ListView x:Name="lv1" Grid.Row="1" Margin="50,0,20,20">
                 <ListView.View >
                     <GridView >
-                        <GridViewColumn Header="name">
+                        <GridViewColumn x:Name="transl_2" Header="name">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Padding="0,0,20,0" Text="{Binding Path = name}"  />
@@ -32,32 +32,32 @@
                         <GridViewColumn Header="id">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Padding="0,0,20,0" Text="{Binding Path = id}"/>
+                                    <TextBlock  Padding="0,0,20,0" Text="{Binding Path = id}"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
-                        <GridViewColumn Header="priceUsd">
+                        <GridViewColumn  x:Name="transl_3" Header="priceUsd">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Padding="0,0,20,0" Text="{Binding Path = priceUsd}"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
-                        <GridViewColumn Header="marketCapUsd">
+                        <GridViewColumn  x:Name="transl_4" Header="marketCapUsd bln">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Padding="0,0,20,0" Text="{Binding Path = marketCapUsd}"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
-                        <GridViewColumn Header="volumeUsd24Hr">
+                        <GridViewColumn  x:Name="transl_5" Header="volumeUsd24Hr bln">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Padding="0,0,20,0" Text="{Binding Path = volumeUsd24Hr}"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
-                        <GridViewColumn Header="changePercent24Hr">
+                        <GridViewColumn  x:Name="transl_6" Header="changePercent24Hr">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Padding="0,0,20,0" Text="{Binding Path = changePercent24Hr}"/>
